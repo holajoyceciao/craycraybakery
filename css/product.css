@@ -64,14 +64,42 @@ body {
 /* -------------------------------- */
 /* ----------header-area----------- */
 /* -------------------------------- */
+.p_header {
+  display: flex;
+  align-items: center;
+  position: fixed relative;
+  top: 0;
+  left: 0;
+  justify-content: space-evenly;
+  box-shadow: 0px 2px 10px #96969680;
+  z-index: 999;
+  background-color: #fff;
+}
+.p_header > .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% auto;
+}
+@media screen and (max-width: 768px) {
+  .p_header {
+    line-height: 100px;
+    justify-content: center;
+    width: 100%;
+    z-index: 99999;
+  }
+  .p_header > .container {
+    text-align: center;
+    width: 100%;
+  }
+}
 .header {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: fixed relative;
   top: 0;
   left: 0;
-  height: 100px;
-  width: 100%;
   justify-content: space-evenly;
   box-shadow: 0px 2px 10px #96969680;
   z-index: 999;
@@ -80,14 +108,15 @@ body {
 .header > .container {
   width: 90%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 1% auto;
 }
 @media screen and (max-width: 768px) {
   .header {
     line-height: 100px;
-    text-align: center;
     justify-content: center;
+    width: 100%;
     z-index: 99999;
   }
   .header > .container {
@@ -176,7 +205,7 @@ input[type="submit"]:hover {
 .nav {
   width: 20%;
   position: fixed;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-right: 5%;
   margin-left: 5px;
   background-color: #fff;
@@ -246,7 +275,7 @@ input[type="submit"]:hover {
 
 .photo {
   text-align: center;
-  margin-top: 170px;
+  margin-top: 90px;
   width: 70%;
   left: 25%;
 }
@@ -283,7 +312,7 @@ hr {
   .nav {
     width: 100%;
     position: relative;
-    margin-top: 100px;
+    margin-top: 5px;
     border-bottom: 1px solid rgba(207, 203, 204, 0.5);
   }
 
@@ -392,8 +421,8 @@ hr {
 .brd_nav {
   width: 20%;
   position: fixed;
-  top: 170px;
-  margin-right: 10%;
+  margin-top: 100px;
+  margin-right: 5%;
   margin-left: 5px;
   background-color: #fff;
 }
@@ -464,6 +493,8 @@ hr {
 }
 @media screen and (max-width: 768px) {
   .item {
+    padding: 0.5em;
+    margin-top: 0;
     flex: 1 1 50%;
   }
 }
@@ -529,16 +560,14 @@ p {
   .demo {
     position: relative;
     width: 100%;
-    top: 50px;
+    top: 0px;
     left: 0%;
-    padding: 5%;
+    padding: 1%;
   }
   .brd_nav {
     width: 100%;
     position: relative;
-    margin-right: 0%;
-    margin-left: 0px;
-    top: 100px;
+    margin-top: 5px;
     border-bottom: 1px solid rgba(207, 203, 204, 0.5);
   }
 
@@ -556,5 +585,11 @@ p {
 
   .featurette-divider {
     margin: 1.5rem auto;
+  }
+  h6 {
+    font-size: 0.85em;
+  }
+  p {
+    font-size: 0.7em;
   }
 }
