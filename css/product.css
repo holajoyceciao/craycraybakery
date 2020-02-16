@@ -280,7 +280,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .p_header {
-    width: 95%;
+    width: 100%;
     margin: 0;
   }
   .p_header > .product_container {
@@ -303,7 +303,7 @@ hr {
     width: 100%;
     position: relative;
     margin: 0;
-    margin-top: 25%;
+    margin-top: 14%;
     border-bottom: 1px solid rgba(207, 203, 204, 0.5);
   }
 
@@ -559,7 +559,7 @@ p {
   .brd_nav {
     width: 100%;
     position: relative;
-    margin-top: 23%;
+    margin-top: 14%;
     border-bottom: 1px solid rgba(207, 203, 204, 0.5);
   }
 
