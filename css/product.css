@@ -11,9 +11,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.sh {
-  height: 580px;
-}
 .id_s {
   display: flex;
   align-items: center;
@@ -59,7 +56,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .container_s {
-    display: block;
     justify-content: center;
     width: 100%;
     align-items: center;
@@ -175,6 +171,39 @@ input[type="submit"]:hover {
   }
 }
 
+/* nav-area  */
+
+.nav {
+  width: 20%;
+  position: fixed;
+  margin-top: 150px;
+  margin-right: 5%;
+  margin-left: 5px;
+  background-color: #fff;
+}
+.nav .list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 60px;
+  width: 100%;
+}
+.nav > .list > div {
+  font-weight: 600;
+}
+
+.nav > .list > a {
+  text-decoration: none;
+  color: black;
+  height: 60px;
+}
+.nav > .list > a:hover {
+  background-color: rgba(207, 203, 204, 0.5);
+}
+.bgcolor {
+  background-color: rgba(207, 203, 204, 0.5);
+}
+
 /* arrow-area  */
 
 #arrow2 {
@@ -214,43 +243,12 @@ input[type="submit"]:hover {
   justify-content: space-between;
   margin-top: 0;
 }
-.nav {
-  width: 20%;
-  position: fixed;
-  margin-top: 150px;
-  margin-right: 5%;
-  margin-left: 5px;
-  background-color: #fff;
-}
 
 .photo {
   text-align: center;
   margin-top: 170px;
   width: 70%;
   left: 25%;
-}
-
-.nav .list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  line-height: 60px;
-  width: 100%;
-}
-.nav > .list > div {
-  font-weight: 600;
-}
-
-.nav > .list > a {
-  text-decoration: none;
-  color: black;
-  height: 60px;
-}
-.nav > .list > a:hover {
-  background-color: rgba(207, 203, 204, 0.5);
-}
-.bgcolor {
-  background-color: rgba(207, 203, 204, 0.5);
 }
 
 hr {
