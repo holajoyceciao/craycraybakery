@@ -56,6 +56,15 @@ body {
 .hh {
   margin-bottom: 7%;
 }
+
+@media screen and (max-width: 768px) {
+  .container_s {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+}
 /* -------------------------------- */
 /* ----------header-area----------- */
 /* -------------------------------- */
@@ -87,6 +96,7 @@ body {
   }
   .header > .container {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -258,10 +268,12 @@ hr {
 @media screen and (max-width: 768px) {
   .header > .product_container {
     justify-content: center;
+    width: 100%;
   }
 
   .p_container {
     width: 100%;
+    height: 100%;
     justify-content: center;
   }
   .photo {
@@ -357,6 +369,7 @@ hr {
   .p2ba {
     display: block;
   }
+
   .p3_container2 {
     width: 100%;
     align-items: center;
