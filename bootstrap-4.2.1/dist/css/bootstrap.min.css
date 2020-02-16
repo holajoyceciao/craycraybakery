@@ -4480,7 +4480,7 @@ input[type="submit"].btn-block {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top:120px;
+  top:13%;
   background-color: #fff;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -4514,13 +4514,6 @@ input[type="submit"].btn-block {
   .breadcrumb {
   position: relative;
   top:0px;
-  padding: 1.5rem 2rem;
-}
-}
-@media screen and (max-width: 768px) {
-  .breadcrumb2 {
-  position: relative;
-  top:100px;
   padding: 1.5rem 2rem;
 }
 }

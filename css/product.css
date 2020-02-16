@@ -64,49 +64,21 @@ body {
 /* -------------------------------- */
 /* ----------header-area----------- */
 /* -------------------------------- */
-.p_header {
-  display: flex;
-  align-items: center;
-  position: fixed relative;
-  top: 0;
-  left: 0;
-  justify-content: space-evenly;
-  box-shadow: 0px 2px 10px #96969680;
-  z-index: 999;
-  background-color: #fff;
-}
-.p_header > .container {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1% auto;
-}
-@media screen and (max-width: 768px) {
-  .p_header {
-    line-height: 100px;
-    justify-content: center;
-    width: 100%;
-    z-index: 99999;
-  }
-  .p_header > .container {
-    text-align: center;
-    width: 100%;
-  }
-}
+
 .header {
   display: flex;
   align-items: center;
-  position: fixed relative;
+  position: fixed;
   top: 0;
   left: 0;
-  justify-content: space-evenly;
+  width: 100%;
+  height: 13%;
   box-shadow: 0px 2px 10px #96969680;
   z-index: 999;
   background-color: #fff;
 }
 .header > .container {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,9 +177,9 @@ input[type="submit"]:hover {
 .nav {
   width: 20%;
   position: fixed;
-  margin-top: 100px;
+  margin-top: 14%;
   margin-right: 5%;
-  margin-left: 5px;
+  margin-left: 0;
   background-color: #fff;
 }
 .nav .list {
@@ -257,25 +229,39 @@ input[type="submit"]:hover {
 /* -------------------------------------- */
 /* ----------product page area----------- */
 /* -------------------------------------- */
+.p_header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 13%;
+  width: 100%;
+  justify-content: space-evenly;
+  box-shadow: 0px 2px 10px #96969680;
+  z-index: 999;
+  background-color: #fff;
+}
 
-.header > .product_container {
+.p_header > .product_container {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 100%;
 }
 
 .p_container {
   width: 90%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 0;
 }
 
 .photo {
+  display: flex;
+  position: relative;
+  height: 100%;
+  top: 190px;
   text-align: center;
-  margin-top: 90px;
   width: 70%;
   left: 25%;
 }
@@ -293,26 +279,31 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  .header > .product_container {
+  .p_header {
+    width: 95%;
+    margin: 0;
+  }
+  .p_header > .product_container {
     justify-content: center;
     width: 100%;
   }
 
   .p_container {
     width: 100%;
-    height: 100%;
     justify-content: center;
   }
   .photo {
-    text-align: center;
-    margin-top: 0px;
+    display: block;
     width: 100%;
-    left: 0%;
+    top: 0px;
+    left: 0;
+    margin: 0;
   }
   .nav {
     width: 100%;
     position: relative;
-    margin-top: 5px;
+    margin: 0;
+    margin-top: 25%;
     border-bottom: 1px solid rgba(207, 203, 204, 0.5);
   }
 
@@ -329,12 +320,13 @@ hr {
   }
 
   .featurette-divider {
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
   }
 }
 
 /* --------- product banner2 area --------- */
 .p2_container {
+  position: relative;
   width: 70%;
   align-items: center;
   margin-left: 15%;
@@ -356,7 +348,7 @@ hr {
     margin-left: 0%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 0;
   }
   .making {
     margin-bottom: 5%;
@@ -403,7 +395,7 @@ hr {
     margin-left: 0%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 0;
   }
   .making2 {
     margin-bottom: 5%;
@@ -421,16 +413,16 @@ hr {
 .brd_nav {
   width: 20%;
   position: fixed;
-  margin-top: 100px;
+  margin-top: 14%;
+  margin-left: 0;
   margin-right: 5%;
-  margin-left: 5px;
   background-color: #fff;
 }
 
 .demo {
   display: flex;
   position: relative;
-  top: 170px;
+  top: 190px;
   left: 15%;
   width: 80%;
   margin-top: 0;
@@ -562,12 +554,12 @@ p {
     width: 100%;
     top: 0px;
     left: 0%;
-    padding: 1%;
+    padding: 0.5%;
   }
   .brd_nav {
     width: 100%;
     position: relative;
-    margin-top: 5px;
+    margin-top: 23%;
     border-bottom: 1px solid rgba(207, 203, 204, 0.5);
   }
 
