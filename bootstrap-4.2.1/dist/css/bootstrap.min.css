@@ -4480,7 +4480,7 @@ input[type="submit"].btn-block {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top:13%;
+  top:100px;
   background-color: #fff;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
