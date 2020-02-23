@@ -4476,19 +4476,25 @@ input[type="submit"].btn-block {
 .accordion .card .card-header {
   margin-bottom: -1px;
 }
+.bbreadcrumb {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 998;
+}
 .breadcrumb {
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
-  top:100px;
-  background-color: #fff;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 6.5rem;
   list-style: none;
   /* background-color: #efefef; */
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -4511,11 +4517,15 @@ input[type="submit"].btn-block {
 }
 
 @media screen and (max-width: 768px) {
+  .bbreadcrumb {
+    position: relative;
+    top: 100px;
+
+    margin-right: auto;
+  }
   .breadcrumb {
-  position: relative;
-  top:0px;
-  padding: 1.5rem 2rem;
-}
+    padding: 1.5rem 2rem;
+  }
 }
 .pagination {
   display: -ms-flexbox;

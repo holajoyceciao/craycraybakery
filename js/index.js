@@ -85,7 +85,7 @@ new WOW().init();
 
 // chef-area animation
 $("#main_chef>.img3").click(function() {
-  $("#main_chef>.main").attr("src", "images/chef3.png");
+  $("#main_chef>.main").attr("src", "images/chef3.jpg");
   $(".AT>h3").text("Allen Timonthy");
   $(".AT>h4").text("Pastry Chef");
   $(".AT>div").text(
