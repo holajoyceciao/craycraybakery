@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 .container_s {
-  width: 90%;
+  width: 100%;
   max-width: 1140px;
   margin: auto;
   align-items: center;
@@ -329,12 +329,12 @@ input[type="submit"]:hover {
 
 /* ----- landingpage banner section ---- */
 #landingpage {
-  height: 530px;
   margin-top: 100px;
 }
 .l_container {
-  padding: 20px 0px;
+  padding: 50px 0px;
   box-sizing: border-box;
+  height: 500px;
 }
 
 .b_nav {
@@ -349,12 +349,12 @@ input[type="submit"]:hover {
 }
 .b_nav > a > p {
   position: relative;
-  top: 50%;
+  line-height: 400px;
   text-align: center;
 }
 .b_nav > a {
-  display: inline-block;
-  flex: 1 1 25%;
+  display: block;
+  flex-basis: calc(100% / 4);
   text-decoration: none;
   color: white;
 }
@@ -370,8 +370,6 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
   #landingpage {
-    height: 50px;
-    background-color: pink;
     position: fixed;
     width: 100%;
     top: 0;
@@ -381,26 +379,17 @@ input[type="submit"]:hover {
   .l_container {
     width: 100%;
     height: 50px;
-    position: relative;
-    background-image: url("images/banner1.jpg");
     background-size: 100%;
+    padding: 0;
   }
   .b_nav {
-    background-image: none;
-    margin: auto;
-    display: flex;
     opacity: 1;
   }
 
   .b_nav > a {
-    display: block;
-    flex-basis: calc(100% / 4);
-    text-decoration: none;
-    color: white;
     font-size: 0.4em;
   }
   .b_nav > a > p {
-    top: 0;
     line-height: 50px;
   }
 
@@ -504,7 +493,7 @@ input[type="submit"]:hover {
 .member1 {
   flex: 1 1 20%;
   height: 50%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .m_photo {
@@ -655,6 +644,8 @@ figure.p_li.hover p {
     height: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
   }
   figure.p_li {
     flex: 1 1 50%;

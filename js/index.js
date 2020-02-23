@@ -1,8 +1,3 @@
-// overlay animation
-$("#overlay")
-  .delay(2000)
-  .fadeOut();
-
 // popup animaton
 jQuery(document).ready(function($) {
   window.onload = function() {
