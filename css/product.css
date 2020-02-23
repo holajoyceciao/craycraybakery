@@ -77,6 +77,7 @@ body {
   height: 100px;
 }
 .header > .container {
+  max-width: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -306,12 +307,13 @@ hr {
 /* --------- product banner2 area --------- */
 .p2_container {
   position: relative;
-  width: 70%;
+  width: 80%;
   align-items: center;
-  margin-left: 15%;
   display: flex;
   justify-content: space-around;
   margin: auto;
+  padding-left: 10%;
+  box-sizing: border-box;
 }
 .making {
   flex-basis: 50%;
@@ -341,12 +343,14 @@ hr {
   display: block;
 }
 .p3_container {
-  width: 70%;
+  position: relative;
+  width: 80%;
   align-items: center;
-  margin-left: 15%;
   display: flex;
   justify-content: space-around;
   margin: auto;
+  padding-left: 10%;
+  box-sizing: border-box;
 }
 .p3_container2 {
   width: 70%;
